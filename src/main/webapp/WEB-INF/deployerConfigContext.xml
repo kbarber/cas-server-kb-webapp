@@ -186,6 +186,20 @@
                         <property name="evaluationOrder" value="0" />
                     </bean>
                     -->
+                    <bean class="org.jasig.cas.services.RegisteredServiceImpl">
+                      <property name="id" value="0" />
+                      <property name="name" value="HTTP" />
+                      <property name="description" value="internal oauth wrapper controller" />
+                      <property name="serviceId" value="https://kb.local:8443/cas/oauth2.0/callbackAuthorize" />
+                    </bean>
+
+                    <bean class="org.jasig.cas.services.RegisteredServiceImpl">
+                      <property name="id" value="1" />
+                      <property name="name" value="this_is_the_key" />
+                      <property name="description" value="this_is_the_secret" />
+                      <property name="serviceId" value="https://kb.local:8443/cas/login" />
+                    </bean>
+
                 </list>
             </property>
         </bean>
